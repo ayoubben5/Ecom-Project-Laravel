@@ -27,5 +27,14 @@
         padding-top: 100px;
         margin-left: 500px;
     }
+    .slider-img{
+        height: 500px !important
+    }
+    .custom-product{
+        height: 600px;
+        }
+    .carousel-caption{
+        background-color: #35443585 !important
+    } 
 </style>
 </html>
