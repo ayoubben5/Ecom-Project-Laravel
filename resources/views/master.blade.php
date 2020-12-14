@@ -36,5 +36,16 @@
     .carousel-caption{
         background-color: #35443585 !important
     } 
+    .trending-item{
+        float: left;
+        width: 20%;
+        
+    }
+    .trending-wrapper{
+        margin: 30px;
+    }
+    .trending-img{
+        height: 100px;
+    }
 </style>
 </html>

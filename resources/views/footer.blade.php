@@ -1,1 +1,1 @@
-<h3>footer Page</h3>
+<h3 style="clear: both">footer Page</h3>
