@@ -10,12 +10,14 @@
         </ol>
         <div class="carousel-inner">
           @foreach ($products as $product)
+          <a href="detail/{{$product['id']}}">
           <div class="carousel-item {{$product['id']==1 ? 'active' : ''}}">
             <img src="{{$product['gallery']}}" class="d-block w-100 slider-img" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5 class="font-weight-bolder">{{$product['product_name']}}</h5>
                 <p >{{$product['description']}}</p>
               </div>
+            </a>
           </div>
           @endforeach
         </div>
@@ -31,11 +33,13 @@
       <div class="trending-wrapper">
           <h3>Trending Products</h3>
           @foreach ($products as $product)
-          <div class="trending-item">
-            <img src="{{$product['gallery']}}" class="trending-img" alt="...">
-            <div class="smtn">
-                <h5 class="font-weight-bolder">{{$product['product_name']}}</h5>
-              </div>
+          <a href="detail/{{$product['id']}}">
+            <div class="trending-item">
+              <img src="{{$product['gallery']}}" class="trending-img" alt="...">
+              <div class="smtn">
+                  <h5 class="font-weight-bolder">{{$product['product_name']}}</h5>
+                </div>
+          </a>
           </div>
           @endforeach
       </div>
