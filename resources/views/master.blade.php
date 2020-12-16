@@ -47,5 +47,8 @@
     .trending-img{
         height: 100px;
     }
+    .detail-img{
+        height: 200px;
+    }
 </style>
 </html>
