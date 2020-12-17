@@ -23,7 +23,7 @@ if(session()->has('user')){
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         <li class="nav-item navbar-right">
-          <a class="nav-link " href="#">Cart({{$total}})</a>
+          <a class="nav-link " href="/cart">Cart({{$total}})</a>
         </li>
         @if (Session::has('user'))
         <li class="nav-item dropdown ">
