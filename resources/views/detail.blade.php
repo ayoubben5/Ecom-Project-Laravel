@@ -6,7 +6,7 @@
             <img class="detail-img" src="{{$product['gallery']}}" alt="">
             </div>
             <div class="col-sm-6">
-            <a href="/">Back</a>
+            <a href="{{ url()->previous() }}">Back</a>
             <h1>{{$product['product_name']}}</h1>
             <br><br>
             <h3> Price : {{$product['price']}}</h3>
