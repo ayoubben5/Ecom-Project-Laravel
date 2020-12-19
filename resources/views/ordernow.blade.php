@@ -5,16 +5,17 @@
     <div class="container">
     <div class="row">
         <div class="col-sm-6 mt-4">
-            <form>
+            <form action="/orderplace" method="GET">
+              @csrf
                 <div class="form-group ml-4">
                   <label class="font-weight-bold" for="adress">Adress</label>
-                  <textarea type="textarea" class="form-control" placeholder="Enter Your Address"></textarea>
+                  <textarea name="adress" class="form-control" placeholder="Enter Your Address"></textarea>
                 </div>
                 <div class="form-group ml-4">
                   <label class="font-weight-bold" for="pwd">Payment Method</label> <br><br>
-                  <input type="radio"  name="payment" id="pwd"><span> online payment</span><br><br>
-                  <input type="radio"  name="payment" id="pwd"><span> Emi payment</span><br><br>
-                  <input type="radio"  name="payment" id="pwd"><span> Cash On delivery</span>
+                  <input type="radio" value="cash"  name="payment" id="pwd"><span> online payment</span><br><br>
+                  <input type="radio" value="cash"  name="payment" id="pwd"><span> Emi payment</span><br><br>
+                  <input type="radio" value="cash"  name="payment" id="pwd"><span> Cash On delivery</span>
                 </div>
                 <button type="submit" class="btn btn-success ml-4">Order now</button>
               </form>

@@ -1,5 +1,10 @@
 @extends('master')
 @section("content")
+<?php 
+use App\Http\Controllers\ProductController;
+?>
+@if (ProductController::cartItem() != 0)
+    
 
 <div class="custom-product">
     <div class="col-sm-10">
@@ -30,6 +35,11 @@
         </div>
     </div>
 </div>
+@else
+<div class="alert alert-info" role="alert">
+    Your Cart is Empty, Time for shopping {{Session::get('user')['name']}} :)
+  </div>
+@endif
 
 
 
