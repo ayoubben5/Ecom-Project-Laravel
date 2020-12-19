@@ -2,6 +2,7 @@
 @section("content")
 
 <div class="custom-product">
+    <div class="container">
     <div class="row">
         <div class="col-sm-6 mt-4">
             <form>
@@ -41,6 +42,7 @@
           </table>
         </div>
           
+</div>
 </div>
 </div>
 
