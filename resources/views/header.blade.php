@@ -17,7 +17,7 @@ if(session()->has('user')){
         </li>
         @if (Session::has('user'))
         <li class="nav-item">
-          <a class="nav-link" href="/ordernow">Orders</a>
+          <a class="nav-link" href="/myorders">Orders</a>
         </li>
         @endif
         <form action="/search" class="form-inline my-2 my-lg-0">
