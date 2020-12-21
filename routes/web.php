@@ -23,6 +23,8 @@ Route::get('/logout', function () {
 });
 
 Route::post('/login', [App\Http\Controllers\UserController::class,'login']);
+Route::view('/register', 'register');
+Route::post('/register', [App\Http\Controllers\UserController::class,'register']);
 Route::get('/', [App\Http\Controllers\ProductController::class,'index']);
 Route::get('/detail/{id}', [App\Http\Controllers\ProductController::class,'detail']);
 Route::get('/search', [App\Http\Controllers\ProductController::class,'search']);

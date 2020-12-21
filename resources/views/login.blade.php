@@ -15,8 +15,10 @@
                   <label for="exampleInputPassword1 " class="font-weight-bolder">Password</label>
                   <input type="password" name="password" class="form-control shadow-sm p-3 mb-5 bg-white rounded" id="exampleInputPassword1" placeholder="Password">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Login <i class="fas fa-sign-in-alt"></i></button>
               </form>
+              <p class="mt-4">Still didn't register?</p>
+              <a href="/register" class="btn btn-info">Sign up <i class="fas fa-user-plus"></i></a>
         </div>
     </div>
 </div>

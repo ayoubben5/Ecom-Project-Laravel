@@ -36,9 +36,11 @@ use App\Http\Controllers\ProductController;
     </div>
 </div>
 @else
-<div class="alert alert-info" role="alert">
+<div class="container">
+<div class="alert alert-info mt-4" role="alert">
     Your Cart is Empty, Time for shopping {{Session::get('user')['name']}} :)
   </div>
+</div>
 @endif
 
 

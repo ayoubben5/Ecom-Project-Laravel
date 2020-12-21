@@ -5,6 +5,9 @@
     <!-- Bootstrap Css Link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="shortcut icon" href="{{asset('img/icon.png')}}" type="image/x-icon">
+    <link rel="icon" href="{{asset('img/icon.png')}}" type="image/x-icon">
     <title>Ecomm Project</title>
 </head>
 <body>
@@ -28,10 +31,13 @@
         margin-left: 500px;
     }
     .slider-img{
-        height: 500px !important
+        height: 500px !important;
+        width:100%;
+        object-fit: cover;
     }
     .custom-product{
         height: 600px;
+        
         }
     .carousel-caption{
         background-color: #35443585 !important
@@ -53,5 +59,76 @@
     .search-box{
         width: 500px !important
     }
+    #Footer{
+    background-color: #2C2929;
+}
+Footer div p{
+    margin-left: 120px;
+    margin-bottom: 3px;
+    color: #fff;
+}
+.fa-facebook{
+    margin-left: 120px;
+    margin-bottom: 3px;
+    color: #fff;
+}
+.fa-twitter , .fa-instagram{
+    margin-left: 10px;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
+.fa-facebook:hover , .fa-twitter:hover , .fa-instagram:hover{
+    color:  #74c044;
+    transform: scale(2);
+}
+Footer div p:hover{
+    margin-left: 120px;
+    color:  #74c044;
+    transform: scale(1.1);
+}
+.footer-item1{
+    margin-top: 40px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-item1:hover{
+    color:  #74c044;
+    transform: scale(1.1);
+}
+
+
+
+.RF-footer{
+    margin-left: 120px;
+    margin-top:40px;
+    font-style: italic;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.divider{
+    margin-left: 120px;
+    margin-top: 20px;
+    border-bottom: 5px solid transparent;
+    
+}
+.divider span {
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #74c044;
+}
+.rf1-footer{
+    margin-top: 30px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+    color: #838181;
+}
+.rf1-footer:hover{
+    color: white;
+    transform: scale(1);
+}
 </style>
 </html>
